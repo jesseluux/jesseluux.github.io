@@ -1,0 +1,48 @@
+body{
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+}
+
+#container{
+      height: 80px;
+      width: 300px;
+      position:relative;
+      left: -50%;
+      text-align: center;
+}
+
+#clock{
+      font-size:8vw;
+}
+
+#calender{
+      font-size:3.2vw;
+}
+
+#batterycontainer{
+      width: 100%;
+}
+
+#batterylevel{
+       width: 86%;
+       height: 3px;
+       background-color: red;
+       float: left;
+       margin-top: 10px;
+}
+
+#batterylevel2{
+       height: 3px;
+       background-color: green;
+}
+
+#battery_percent{
+      font-size: 3vw;
+      font-weight: 400;
+      float: right;
+      margin-top: 1.2%;
+}
