@@ -1,0 +1,52 @@
+<html><head>
+<title>JP_LS_1</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="Style.css" type="text/css" media="screen"/>
+<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/lang.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+
+<body onload="init()">
+
+<!--<div id="L"></div>-->
+<div style="position: absolute; left: 50%; bottom: 5;">
+	<div id="container">
+
+		<div id="Clock">
+			<a id="hour"></a>:<a id="minute"></a><a id="ampm"></a>
+		</div>
+
+		<div id="Cal">
+			<a id="weekday"></a>, <a id="month"></a> <a id="date"></a>
+		</div>
+
+		<div id="batterycontainer">
+			<div id="BatteryLevel"><div id="batterylevel2"></div></div><a id="battery_percent">100%</a>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+<script type="text/cycript">
+    var getBattery = function() { return [IS2System batteryPercent]; };
+    var getBattState = function() { return [IS2System batteryState]; };
+</script>
+
+<script>
+    (function writeDiv(){
+     	document.getElementById('battery_percent').textContent = getBattery() + '%';
+     	$('#batterylevel2').css("width", getBattery()+"%");
+     	setTimeout(writeDiv, 10000);
+    }());
+</script>
+
+</body></html>
