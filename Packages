@@ -3,10 +3,10 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: jesseluux
 Filename: ./debs/com.jesseluux.jpls1_1.0_iphoneos-arm.deb
-Size: 35572
-MD5sum: 420618c230850fe4611d3456e693a9d2
-SHA1: ee2a74cef181f0e50dd783c8400200a78139f998
-SHA256: d03ee8360f1c85efcc2db1cef0ba065f6e1c88e15bd10c00730833dcd33dcc51
+Size: 31886
+MD5sum: dd14ac1535a6176f9db769bdf75c333b
+SHA1: 3060c4c49220e1833e3c0b256bb3d05f0c2ca613
+SHA256: 10651e09d67c5b3b3bbac449ff07f477cf05db8694349ce6924d91f14bfe5af1
 Section: Lockscreen Widgets
 Description: A LockHtml4/Groovylock theme
 Author: jesseluux
