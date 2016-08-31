@@ -1,0 +1,29 @@
+body{
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      color: #d9d9d9;
+      font-family: 'Fjalla One', sans-serif;
+      letter-spacing: 1;
+}
+
+#container{
+      height: 80px;
+      width: 300px;
+      position:relative;
+      left: -50%;
+      text-align: center;
+}
+
+#clock{
+      font-size:10vw;
+}
+
+#calender{
+      margin-top: 5px;
+      font-size:4.2vw;
+}
+
+#ampm{
+      font-size: 5vw;
+}

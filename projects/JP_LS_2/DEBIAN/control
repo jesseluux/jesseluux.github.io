@@ -1,0 +1,9 @@
+Package: com.jesseluux.jpls2
+Name: JP_LS_2
+Depends:
+Version: 1.0
+Architecture: iphoneos-arm
+Description: A LockHtml4/Groovylock theme
+Maintainer: jesseluux
+Author: jesseluux
+Section: Lockscreen Widgets
