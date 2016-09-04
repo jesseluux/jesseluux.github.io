@@ -1,0 +1,86 @@
+<html>
+
+	<head>
+		<title>Circles</title>
+
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+		<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="main.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600i,700i" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<div class="circle" id="circle1"></div>
+
+			<div class="circle" id="circle2"></div>
+
+			<div class="circle" id="circle3"></div>
+
+			<br class="clear">
+
+			<div class="circle" id="circle4"></div>
+
+			<div class="circle" id="circle5"></div>
+
+			<div id="clock"><div id="clock2"><a id="hour"></a>:<a id="minute"></a><br><a id="ampm"></a></div></div>
+
+			<div class="circle" id="circle6"><div id="weather"><span id="temp">X</span></div></div>
+
+			<div class="circle" id="circle7"></div>
+
+			<div class="circle" id="circle8"></div>
+
+		</div>
+
+		<script>
+			init();
+		</script>
+
+		<script type="text/cycript">
+		    var getBatteryPercent = function() { return [IS2System batteryPercent]; };
+		    var getBatteryStatus = function() { return [IS2System batteryStateAsInteger]; };
+		    var getRamPercent = function() { return ([IS2System ramUsed] / ([IS2System ramUsed] + [IS2System ramFree]))*100; };
+		    var getCpuUsage = function() { return [IS2System cpuUsage]; };
+		    var getTemp = function() { return [IS2Weather currentTemperature]; };
+		    var getNotif= function(bundleid) { return [IS2Notifications notificationCountForApplication:bundleid]; };
+
+		</script>
+
+		<script>
+		    (function updateBattery(){
+		     	document.getElementById('battery_p').textContent = getBatteryPercent() + '%';
+		     	if(getBatteryStatus() == 2){
+		     		$('#battery').css('background-image', 'url("bolt.png")');
+		     	}else{
+		     		$('#battery').css('background-image', 'none');
+		     	}
+		     	setTimeout(updateBattery, 10000);
+		    }());
+		    (function updateRam_Cpu(){
+		     	document.getElementById('ram_value').textContent = getRamPercent().toFixed(0) + '%';
+		     	document.getElementById('cpu_value').textContent = getCpuUsage().toFixed(0) + '%';
+		     	setTimeout(updateRam_Cpu, 1000);
+		    }());
+		    (function updateWeather(){
+		  		document.getElementById('temp').textContent = getTemp() + '°';
+
+		  		setTimeout(updateWeather, 10000);
+		  	}());
+		  	(function updateNotifications(){
+		  		document.getElementById('notif_1').textContent = getNotif(notif_1);
+		  		document.getElementById('notif_2').textContent = getNotif(notif_2);
+		  		document.getElementById('notif_3').textContent = getNotif(notif_3);
+		  		setTimeout(updateNotifications, 10000);
+		  	}());
+		</script>
+
+	</body>
+
+</html>

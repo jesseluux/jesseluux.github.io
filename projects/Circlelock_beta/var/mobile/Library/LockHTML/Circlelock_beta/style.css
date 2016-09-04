@@ -1,0 +1,180 @@
+@font-face{
+      font-family:bold;
+      src:url(OpenSans-BoldItalic.ttf);
+}
+@font-face{
+      font-family:semibold;
+      src:url(OpenSans-SemiboldItalic.ttf);
+}
+
+span, p{
+      margin: 0;
+      padding: 0;
+}
+body{
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      font-family: semibold;
+      /*background-image: url('test.jpeg');
+      background-size: 100%;
+      */color: white;
+}
+
+
+
+#container{
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 150px;
+      position: absolute;
+      text-align: center;
+}
+
+.circle{
+      width: 60px;
+      height: 60px;
+      position: relative;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: 4px solid white;
+      font-size: 18px;
+}
+
+#circle1{
+      margin-left: 20%;
+      float: left;
+      margin-top: 25px;
+}
+
+#circle2{
+      float: left;
+      margin-top: 5px;
+}
+
+#circle3{
+      margin-right: 20%;
+      float: right;
+      margin-top: 25px;
+}
+
+#circle4{
+      margin-left: 14%;
+      float: left;
+      margin-top: 25px;
+
+}
+
+#circle5{
+      margin-right: 14%;
+      margin-top: 25px;
+      float: right;
+}
+
+#circle6{
+      margin-left: 20%;
+      float: left;
+}
+
+#circle7{
+      float: left;
+      margin-top: 20px;
+}
+
+#circle8{
+      float: right; 
+      margin-right: 20%;
+
+}
+
+.value_nametag{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      margin-top: 18px;
+      font-size: 16px;
+}
+
+#nametag{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: 8px;
+      margin-top: 13px;
+}
+
+#clock{
+      font-size:30px;
+      position: relative;
+      width: 110px;
+      height: 110px;
+      margin: 0 auto;
+      background-image: url('1.png');
+      box-sizing: border-box;
+}
+
+#clock2{
+      width: 110px;
+      height: 110px;
+      position: relative;
+      padding-top: 34px;
+      box-sizing: border-box;
+      font-family: bold;
+}
+
+#ampm{
+      font-size: 16px;
+}
+
+
+
+#calender{
+      width: 60px;
+      height: 60px;
+      margin-left: -4px;
+      margin-top: -4px;
+      box-sizing: border-box;
+      position: relative;
+      font-size: 18px;
+      background-image: url('2.png');
+}
+
+#weather, #battery{
+      width: 60px;
+      height: 60px;
+      margin-left: -4px;
+      margin-top: -4px;
+      box-sizing: border-box;
+      position: relative;
+      padding-top: 17px;
+}
+
+#battery{
+      background-size: cover;
+}
+
+
+#day, #month{
+      font-size: 14px;
+}
+
+#day{
+      float: left;
+      margin-left: 13px;
+      margin-top: 10px;
+}
+
+#month{
+      margin-top: 30px;
+      float: left;
+      margin-left: 2px;
+}
+
+
+.clear{
+      clear: both;
+}
+
+
+
+
