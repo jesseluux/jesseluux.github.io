@@ -19,11 +19,11 @@ var circle8 = "battery";
 
 //Change according to which notifications you want to see, search for the apps 'bundle id'
 //If you choose to not use any "notif" leave these as they are
-var notif_1 = "net.whatsapp.WhatsApp";
-var notif_1_name = "Whatsapp";
+var notif_1 = "com.apple.MobileSMS";
+var notif_1_name = "Messages";
 var notif_2 = "com.apple.mobilephone";
 var notif_2_name = "Phone";
-var notif_3 = "com.microsoft.Office.Outlook";
+var notif_3 = "com.apple.mobilemail";
 var notif_3_name = "Email";
 
 //Here are some of the common apps bundle ids:
