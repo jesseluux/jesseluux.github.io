@@ -1,7 +1,7 @@
 Package: com.jesseluux.circlelock
 Name: Circlelock
 Depends: com.matchstic.infostats2
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: A highly customizable LockHtml4/Groovylock theme
 Maintainer: jesseluux

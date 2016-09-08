@@ -59,11 +59,11 @@
 		    	for(var i = 0; i < battery_p_a.length; i++){
 		    		battery_p_a[i].textContent = getBatteryPercent() + '%';
 		    	}
-		     	/*if(getBatteryStatus() == 2){
+		     	if(getBatteryStatus() == 2){
 		     		$('#battery').css('background-image', 'url("bolt.png")');
 		     	}else{
 		     		$('#battery').css('background-image', 'none');
-		     	}*/
+		     	}
 		     	setTimeout(updateBattery, 10000);
 		    }());
 		    (function updateRam_Cpu(){
