@@ -1,13 +1,13 @@
 Package: com.jesseluux.circlelock
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Maintainer: jesseluux
 Depends: com.matchstic.infostats2
-Filename: ./debs/com.jesseluux.circlelock_1.0.1_iphoneos-arm.deb
-Size: 260154
-MD5sum: c20e5ed55b50310f7b616ce8b20f434b
-SHA1: 5fbef98c1ebb1f7c0b58a55557050b32c0e23e5f
-SHA256: 6f98f31ec8ead20d849d2e61343b7e2f325b80cc68fe2092314b3c661b8403a5
+Filename: ./debs/com.jesseluux.circlelock_1.0.2_iphoneos-arm.deb
+Size: 260160
+MD5sum: 769dbdf29a0027f88a41c2c81220974b
+SHA1: 33d8a680dd3626f79d7fa6c4b52c50b6f8bd668d
+SHA256: 9cc4e6a79a9477864082a7e8208288c2fb4b49b3c6e87e1cc694781c0c8bcd13
 Section: Lockscreen Widgets
 Description: A highly customizable LockHtml4/Groovylock theme
 Author: jesseluux
@@ -19,9 +19,9 @@ Architecture: iphoneos-arm
 Maintainer: jesseluux
 Filename: ./debs/com.jesseluux.jpls1_1.0_iphoneos-arm.deb
 Size: 31886
-MD5sum: 0a76643ad79fd9c99c0ba910129bc506
-SHA1: ffb8c6c88bcb45760b7b57514ce8b10f6a1bd56a
-SHA256: 2374c8a42187359a0035cbd47eae315fb56a2b034ba1442f032028ccd02bb6ae
+MD5sum: 720e13b06383e35b7d9d65211853d97e
+SHA1: 1ce1315e9d63a3819a8bc6fffe3a02b09ad1c174
+SHA256: dc2ca730f61ca256b584cd79352793653005483ee1ef4824aabbc2a221d77731
 Section: Lockscreen Widgets
 Description: A LockHtml4/Groovylock theme
 Author: jesseluux
@@ -33,9 +33,9 @@ Architecture: iphoneos-arm
 Maintainer: jesseluux
 Filename: ./debs/com.jesseluux.jpls1dark_1.0_iphoneos-arm.deb
 Size: 31904
-MD5sum: 7fc01510af00da00dac2a2725485f564
-SHA1: c440d664eea98f5d99cf53897e3760bb9a8c26fd
-SHA256: b08ff6995d7b6e4557b9898ded4307f4cafbc064cbb651c56c285ba0cbda1fa9
+MD5sum: 6838b8bd99a5226d626260664e8570e5
+SHA1: fdb88d2cad32706e4b3fe98e6bf5c335459388c6
+SHA256: bbaff2d4b65d242d0780c66b2ca4ed91b5ae88b71994b04ed39856ba8eef1c02
 Section: Lockscreen Widgets
 Description: A LockHtml4/Groovylock theme
 Author: jesseluux
@@ -47,9 +47,9 @@ Architecture: iphoneos-arm
 Maintainer: jesseluux
 Filename: ./debs/com.jesseluux.jpls2_1.0_iphoneos-arm.deb
 Size: 31742
-MD5sum: 43b17a280adb0904af7931766ec50dfe
-SHA1: 6ed86a64fa990af4b5cec9a7f2d35fe7d155adcb
-SHA256: 001056603810af80ff3c5995269766b5acbca075742ed7eb984e414d440519b5
+MD5sum: 8826cfd71ca0d77aac5790051c2c1742
+SHA1: 8129db627337c9ad9d9be704e33ec1bd7b4091e5
+SHA256: 80a2b42db8ce5e48c9a1d42718910830db13cd380fa2074f4593db5ed97b0f56
 Section: Lockscreen Widgets
 Description: A LockHtml4/Groovylock theme
 Author: jesseluux

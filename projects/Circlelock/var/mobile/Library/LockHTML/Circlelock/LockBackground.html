@@ -60,11 +60,11 @@
 		    		battery_p_a[i].textContent = getBatteryPercent() + '%';
 		    	}
 		     	if(getBatteryStatus() == 2){
-		     		$('#battery').css('background-image', 'url("bolt.png")');
+		     		$('#battery').css('background-image', 'url(bolt.svg)');
 		     	}else{
 		     		$('#battery').css('background-image', 'none');
 		     	}
-		     	setTimeout(updateBattery, 10000);
+		     	setTimeout(updateBattery, 2500);
 		    }());
 		    (function updateRam_Cpu(){
 
@@ -108,7 +108,7 @@
 		  			notif_3_a[i].textContent = getNotif(notif_3);
 		  		}
 		  		
-		  		setTimeout(updateNotifications, 10000);
+		  		setTimeout(updateNotifications, 5000);
 		  	}());
 		</script>
 
