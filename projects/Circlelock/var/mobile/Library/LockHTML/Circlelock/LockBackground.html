@@ -31,7 +31,7 @@
 
 			<div id="clock"><div id="clock2"><a id="hour"></a>:<a id="minute"></a><br><a id="ampm"></a></div></div>
 
-			<div class="circle" id="circle6"><div id="weather"><span id="temp">X</span></div></div>
+			<div class="circle" id="circle6"></div>
 
 			<div class="circle" id="circle7"></div>
 
@@ -55,28 +55,59 @@
 
 		<script>
 		    (function updateBattery(){
-		     	document.getElementById('battery_p').textContent = getBatteryPercent() + '%';
-		     	if(getBatteryStatus() == 2){
+		    	var battery_p_a = document.getElementsByClassName('battery_p');
+		    	for(var i = 0; i < battery_p_a.length; i++){
+		    		battery_p_a[i].textContent = getBatteryPercent() + '%';
+		    	}
+		     	/*if(getBatteryStatus() == 2){
 		     		$('#battery').css('background-image', 'url("bolt.png")');
 		     	}else{
 		     		$('#battery').css('background-image', 'none');
-		     	}
+		     	}*/
 		     	setTimeout(updateBattery, 10000);
 		    }());
 		    (function updateRam_Cpu(){
-		     	document.getElementById('ram_value').textContent = getRamPercent().toFixed(0) + '%';
-		     	document.getElementById('cpu_value').textContent = getCpuUsage().toFixed(0) + '%';
+
+		    	var ram_value_a = document.getElementsByClassName('ram_value');
+
+		    	for(var i = 0; i < ram_value_a.length; i++){
+		    		ram_value_a[i].textContent = getRamPercent().toFixed(0) + '%';
+		    	}
+
+		    	var cpu_value_a = document.getElementsByClassName('cpu_value');
+
+		    	for(var i = 0; i < cpu_value_a.length; i++){
+		    		cpu_value_a[i].textContent = getCpuUsage().toFixed(0) + '%';
+		    	}
+		
 		     	setTimeout(updateRam_Cpu, 1000);
 		    }());
 		    (function updateWeather(){
-		  		document.getElementById('temp').textContent = getTemp() + '°';
+
+		    	var weather_a = document.getElementsByClassName('temp');
+
+		    	for(var i = 0; i < weather_a.length; i++){
+		    		weather_a[i].textContent = getTemp() + '°';
+		    	}
 
 		  		setTimeout(updateWeather, 10000);
 		  	}());
 		  	(function updateNotifications(){
-		  		document.getElementById('notif_1').textContent = getNotif(notif_1);
-		  		document.getElementById('notif_2').textContent = getNotif(notif_2);
-		  		document.getElementById('notif_3').textContent = getNotif(notif_3);
+
+		  		var notif_1_a = document.getElementsByClassName('notif_1');
+		  		var notif_2_a = document.getElementsByClassName('notif_2');
+		  		var notif_3_a = document.getElementsByClassName('notif_3');
+
+		  		for(var i = 0; i < notif_1_a.length; i++){
+		  			notif_1_a[i].textContent = getNotif(notif_1);
+		  		}
+		  		for(var i = 0; i < notif_2_a.length; i++){
+		  			notif_2_a[i].textContent = getNotif(notif_2);
+		  		}
+		  		for(var i = 0; i < notif_3_a.length; i++){
+		  			notif_3_a[i].textContent = getNotif(notif_3);
+		  		}
+		  		
 		  		setTimeout(updateNotifications, 10000);
 		  	}());
 		</script>

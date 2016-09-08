@@ -1,9 +1,9 @@
-Package: com.jesseluux.circlelockbeta
-Name: Circlelock_beta
+Package: com.jesseluux.circlelock
+Name: Circlelock
 Depends: com.matchstic.infostats2
-Version: 0.5beta
+Version: 1.0
 Architecture: iphoneos-arm
-Description: A LockHtml4/Groovylock theme
+Description: A highly customizable LockHtml4/Groovylock theme
 Maintainer: jesseluux
 Author: jesseluux
 Section: Lockscreen Widgets
