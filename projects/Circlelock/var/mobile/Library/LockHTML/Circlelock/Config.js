@@ -23,7 +23,7 @@ var notif_1 = "com.apple.MobileSMS";
 var notif_1_name = "Messages";
 var notif_2 = "com.apple.mobilephone";
 var notif_2_name = "Phone";
-var notif_3 = "com.microsoft.Office.Outlook";
+var notif_3 = "com.apple.mobilemail";
 var notif_3_name = "Email";
 
 //Here are some of the common apps bundle ids:
